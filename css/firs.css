@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  color: #000;
+  background-image: linear-gradient(45deg, rgb(120, 31, 202), pink);
+  text-align: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 101px;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  transform: translateY(250px);
+}
+.clec {
+  display: inline-block;
+  transform: translateY(310px);
+  animation-name: practice;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+span {
+  display: inline-block;
+  animation-name: jump;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.games {
+  animation-delay: 0.5s;
+}
+.hub {
+  animation-delay: 2s;
+}
+@keyframes practice {
+  0% {
+    box-shadow: 0 0 10px rgb(250, 22, 136);
+  }
+  50% {
+    box-shadow: 0 0 50px rgb(224, 15, 120);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(187, 7, 97);
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-79px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
